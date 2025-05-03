@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const { analyzeDocument } = require('./services/geminiService'); // importa a função IA Gemini
 const { getTwitterProfile, getInstagramProfile, analyzeSocialProfiles } = require('./services/socialMediaService');
-const { validateLinkRelevance } = require('./services/esportsLinkService'); // importa o novo serviço
+const { validateLinkRelevance } = require('./services/esportslinkService'); // importa o novo serviço
 
 const app = express();
 const PORT = 5000;
