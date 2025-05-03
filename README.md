@@ -1,7 +1,7 @@
 # 🎮 Furia - Know Your Fan
 
 <p align="center">
-  <img src="https://via.placeholder.com/1200x400?text=Furia+Know+Your+Fan" alt="Furia - Know Your Fan" width="100%">
+  <img src="./Know Your Fan - Frontend/src/assets/screenshot3.png" alt="Furia - Know Your Fan" width="100%">
 </p>
 
 ## 📋 Sobre o Projeto
@@ -170,9 +170,9 @@ Sistema de validação de links relacionados a e-Sports.
 </p>
 
 <p align="center">
-  <img src="./src/assets/screenshot7.png" alt="Formulário de Dados" width="30%">
-  <img src="./src/assets/screenshot8.png" alt="Conexão de Redes Sociais" width="30%">
-  <img src="./src/assets/screenshot9.png" alt="Validação de Links" width="30%">
+  <img src="./Know Your Fan - Frontend/src/assets/screenshot8.png" alt="Formulário de Dados" width="30%">
+  <img src="./Know Your Fan - Frontend/src/assets/screenshot7.png" alt="Conexão de Redes Sociais" width="30%">
+  <img src="./Know Your Fan - Frontend/src/assets/screenshot9.png" alt="Validação de Links" width="30%">
 </p>
 
 
