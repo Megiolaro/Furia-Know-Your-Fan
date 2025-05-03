@@ -1,9 +1,10 @@
 import { SocialProfile, ConnectResponse, AnalysisResponse } from '../types';
+import { API_BASE_URL } from '../../../config/api';
 
 // Função para conectar ao Twitter
 export const connectTwitterAPI = async (username: string): Promise<ConnectResponse> => {
   try {
-    const response = await fetch('http://localhost:5000/connect-twitter', {
+    const response = await fetch(`${API_BASE_URL}/connect-twitter`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -28,7 +29,7 @@ export const connectTwitterAPI = async (username: string): Promise<ConnectRespon
 // Função para conectar ao Instagram
 export const connectInstagramAPI = async (username: string): Promise<ConnectResponse> => {
   try {
-    const response = await fetch('http://localhost:5000/connect-instagram', {
+    const response = await fetch(`${API_BASE_URL}/connect-instagram`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -53,7 +54,7 @@ export const connectInstagramAPI = async (username: string): Promise<ConnectResp
 // Função para analisar perfis
 export const analyzeSocialProfilesAPI = async (profiles: SocialProfile[]): Promise<AnalysisResponse> => {
   try {
-    const response = await fetch('http://localhost:5000/analyze-social-profiles', {
+    const response = await fetch(`${API_BASE_URL}/analyze-social-profiles`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

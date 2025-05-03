@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { API_BASE_URL } from '../../../config/api';
 
 export const useDocumentValidation = () => {
   const [documentFile, setDocumentFile] = useState<File | null>(null);
@@ -25,7 +26,7 @@ export const useDocumentValidation = () => {
         const base64 = (reader.result as string).split(",")[1];
 
         try {
-          const response = await fetch('http://localhost:5000/validate-document', {
+          const response = await fetch(`${API_BASE_URL}/validate-document`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

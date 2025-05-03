@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { LinkValidationResult, UserProfile } from '../types/index';
+import { API_BASE_URL } from '../../../config/api';
 
 export const useLinkValidation = () => {
   const [linkValidationResult, setLinkValidationResult] = useState<LinkValidationResult | null>(null);
@@ -15,7 +16,7 @@ export const useLinkValidation = () => {
     
     try {
       // Fazer a chamada para a API de validação de links
-      const response = await fetch('http://localhost:5000/validate-esports-link', {
+      const response = await fetch(`${API_BASE_URL}/validate-esports-link`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

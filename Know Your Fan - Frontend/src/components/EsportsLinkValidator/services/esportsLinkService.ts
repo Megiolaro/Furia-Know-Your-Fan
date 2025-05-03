@@ -1,4 +1,5 @@
 import { LinkValidationResult, UserProfile } from '../types';
+import { API_BASE_URL } from '../../../config/api';
 
 /**
  * Serviço para validação de links de e-sports
@@ -15,7 +16,7 @@ export const esportsLinkService = {
     userProfile: UserProfile
   ): Promise<LinkValidationResult> {
     try {
-      const response = await fetch('http://localhost:5000/validate-esports-link', {
+      const response = await fetch(`${API_BASE_URL}/validate-esports-link`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
