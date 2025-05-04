@@ -7,8 +7,16 @@ const { validateLinkRelevance } = require('./services/esportslinkService'); // i
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://furia-know-your-fan-1dqj.onrender.com', // URL do seu frontend no Render
+    'http://localhost:3000', // URL local do frontend (se necessário)
+    'http://localhost:5173'  // URL local do Vite (se necessário)
+  ],
+  credentials: true
+}));
 app.use(express.json({ limit: '20mb' }));
+
 
 app.post('/validate-document', async (req, res) => {
   try {
